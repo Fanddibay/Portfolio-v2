@@ -47,7 +47,10 @@ const contactUs = () => {
         alt=""
         className="absolute bottom-0 lg:block hidden"
       />
-      <div className="container mt-32 mx-auto p-4 lg:p-0" id="contact">
+      <div
+        className="container mt-32 mx-auto p-4 lg:p-0 overflow-hidden"
+        id="contact"
+      >
         <div data-aos="zoom-out-down" data-aos-duration="1500">
           <div className="w-[100px] mx-auto">
             <h5 className="text-center items-center border-2 border-red-400 p-2 rounded-ss-xl  rounded-ee-xl font-bold text-red-400">

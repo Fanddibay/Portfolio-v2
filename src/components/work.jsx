@@ -75,7 +75,7 @@ const work = () => {
         className="absolute top-0 "
       />
       <div id="about">
-        <div className="lg:hidden sm:block">
+        <div className="lg:hidden sm:block overflow-hidden">
           <div
             className="justify-center items-center text-center my-auto"
             data-aos="zoom-out"

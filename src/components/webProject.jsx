@@ -195,7 +195,7 @@ const webProject = () => {
         className="right-10 rotate-45 absolute "
       />
 
-      <div className="container mt-32 mx-auto overflow-hidden " id="project">
+      <div className="container mt-32 mx-auto overflow-hidden" id="project">
         <h1
           className="text-primary  font-bold text-center mb-12"
           data-aos="fade-left"

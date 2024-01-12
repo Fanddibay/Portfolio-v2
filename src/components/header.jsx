@@ -22,7 +22,9 @@ import "../Header.css";
 
 const header = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: false,
+    });
   }, []);
   const iconPortfolio = [
     {
@@ -84,9 +86,9 @@ const header = () => {
         alt=""
         className="absolute right-20 bottom-10 lg:block hidden"
       />
-      <div className="p-4">
+      <div className="p-4 ">
         <div className="lg:container mx-auto">
-          <div className="sm:hidden block">
+          <div className="sm:hidden block overflow-hidden">
             <div
               className=" align-middle text-end   mt-5"
               data-aos="zoom-out-up"
