@@ -31,21 +31,21 @@ const contactUs = () => {
         width={25}
         height={25}
         alt=""
-        className="absolute right-5"
+        className="absolute right-5 "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute rotate-90 top-0"
+        className="absolute rotate-90 top-0 "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute bottom-0"
+        className="absolute bottom-0 lg:block hidden"
       />
       <div className="container mt-32 mx-auto p-4 lg:p-0" id="contact">
         <div className="w-[100px] mx-auto">
@@ -100,28 +100,28 @@ const contactUs = () => {
         width={25}
         height={25}
         alt=""
-        className="absolute right-5"
+        className="absolute right-5 "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute rotate-90 right-[70%]"
+        className="absolute rotate-90 "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute right-[72%]"
+        className="absolute right-[72%] lg:block hidden"
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute rotate-90 left-0"
+        className="absolute rotate-90 left-0 lg:block hidden"
       />
     </>
   );

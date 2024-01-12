@@ -187,32 +187,32 @@ const webProject = () => {
         width={25}
         height={25}
         alt=""
-        className="left-10 rotate-90 absolute"
+        className="left-10 rotate-90 absolute lg:block hidden"
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="left-0  absolute"
+        className="left-0  absolute  "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="right-10 absolute"
+        className="right-10 absolute "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="right-10 rotate-45 absolute"
+        className="right-10 rotate-45 absolute "
       />
 
       <div
-        className="container mt-32 mx-auto overflow-x-hidden lg:overflow-x-visible"
+        className="container mt-32 mx-auto overflow-hidden lg:overflow-x-visible"
         id="project"
       >
         <h1 className="text-primary  font-bold text-center mb-12">
@@ -225,11 +225,11 @@ const webProject = () => {
         <Slider {...settings}>
           {itemsWeb.map((item, i) => (
             <div key={i} className="">
-              <div className="lg:flex grid sm:grid gap-6 lg:justify-between bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 h-[75vh] lg:h-[100%]">
+              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 h-[75vh] lg:h-[100%]">
                 <img
                   src={item.image}
                   alt="Project Image Web"
-                  className="lg:max-w-[50%]"
+                  className="lg:max-w-[50%] h-[100%]"
                 />
                 <div className="self-center items-center ">
                   <h3 className="text-black font-bold lg:text-3xl text-lg">

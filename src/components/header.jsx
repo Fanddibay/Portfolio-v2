@@ -45,35 +45,35 @@ const header = () => {
         width={25}
         height={25}
         alt=""
-        className="absolute top-10 right-5"
+        className="absolute top-10 right-5 "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute bottom-0"
+        className="absolute bottom-0 lg:block hidden"
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute right-10 bottom-0 rotate-45"
+        className="absolute right-10 bottom-0 rotate-45 "
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute right-20 bottom-10 rotate-45"
+        className="absolute right-20 bottom-10 rotate-45 lg:block hidden"
       />
       <img
         src={asetImg}
         width={25}
         height={25}
         alt=""
-        className="absolute right-20 bottom-10"
+        className="absolute right-20 bottom-10 lg:block hidden"
       />
       <div className="p-4">
         <div className="lg:container mx-auto">
@@ -94,13 +94,13 @@ const header = () => {
                   </span>
                 </h1>
                 <div className="mt-0 mb-24 ">
-                  <h3 className=" text-base  leading-relaxed my-8 lg:my-8">
+                  <h3 className=" text-base text-balance  leading-relaxed mb-8 mt-3 lg:my-8">
                     Designing and developing user
                     <span className="font-bold text-red-400  tracking-wide ms-1 leading-6">
                       Interface for over 2 years as UI/UX Designer and Web
-                      Developer, <br />
+                      Developer,
                     </span>
-                    lets create something reate together.
+                    lets create something <br /> reate together.
                   </h3>
                   <a
                     href="mailto:fandi.bayu110@gmail.com"
@@ -110,13 +110,12 @@ const header = () => {
                   >
                     Get in touch
                   </a>
-
                   <div className="flex gap-3  mt-6 ">
                     {iconPortfolio.map((setIcon, index) => (
                       <div key={index}>
-                        <a href="#" className="hover:text-red-400">
+                        <a href={setIcon.link} className="hover:text-red-400">
                           {" "}
-                          <FontAwesomeIcon icon={setIcon} size="xl" />
+                          <FontAwesomeIcon icon={setIcon.image} size="xl" />
                         </a>
                       </div>
                     ))}
@@ -149,7 +148,9 @@ const header = () => {
                       Interface for over 2 years as UI/UX DESIGNERS{" "}
                       <br className="hidden lg:block" /> and WEB DEVELOPER, lets
                       create something reate together.
-                    </span>
+                    </span>{" "}
+                    <br />
+                    lets create something reate together.
                   </h3>
                   <a
                     href="mailto:fandi.bayu110@gmail.com"
@@ -182,7 +183,7 @@ const header = () => {
                   src={heroImg}
                   alt="Hero"
                   width={1000}
-                  className="lg:-mt-32"
+                  className="lg:-mt-32 "
                 />
               </div>
             </div>

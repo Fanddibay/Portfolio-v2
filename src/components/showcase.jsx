@@ -6,7 +6,7 @@ const showcase = () => {
   return (
     <>
       <div
-        className="container mx-auto mt-24 overflow-x-hidden lg:overflow-x-visible"
+        className="container mx-auto mt-24 overflow-hidden lg:overflow-x-visible"
         id="project"
       >
         <div className="lg:flex block items-center">

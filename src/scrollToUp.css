@@ -5,6 +5,7 @@
   width: 30px;
   height: 30px;
   background: white;
+
   border: 5px solid rgb(255, 32, 32);
   border-radius: 50%;
   z-index: 999;
@@ -23,4 +24,8 @@
   text-align: center;
   right: 1.4px;
   bottom: 1.4px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
 }

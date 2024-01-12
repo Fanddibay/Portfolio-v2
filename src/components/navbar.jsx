@@ -11,12 +11,13 @@ import {
   faCheckSquare,
   faCoffee,
   faCamera,
-  faHamburger,
   faMoon,
   faSun,
+  faTimes,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCheckSquare, faCoffee, faCamera, faHamburger, faMoon, faSun);
+library.add(faCheckSquare, faCoffee, faCamera, faBars, faMoon, faSun, faTimes);
 const navbar = () => {
   const menu = ["Home", "About", "Project", "Contact", "Resume"];
   const menus = [
@@ -87,24 +88,47 @@ const navbar = () => {
             <button className="-mt-12">
               <DarkModeToggle />
             </button>
-            <button
+            <FontAwesomeIcon
+              icon={faBars}
+              className={`menu-icon p-1 text-white mr-2 mt-2 ${
+                isOpen ? "hidden" : ""
+              }`}
               onClick={toggleMenu}
-              className="inline-flex p-3 hover:bg-gray-900 rounded ml-auto nav-toggler text-white"
-            >
-              <FontAwesomeIcon icon="hamburger" size="xl" />
-            </button>
+              size="xl"
+            />
+            {/* Ikon X (Close) */}
+            <FontAwesomeIcon
+              icon={faTimes}
+              className={`close-icon p-1 text-white mr-2 mt-2 ${
+                isOpen ? "" : "hidden"
+              }`}
+              onClick={toggleMenu}
+              size="xl"
+            />
           </div>
         </div>
 
         {isOpen && (
           <div className="menu">
             {/* Tambahkan item-menu atau link-menu di sini */}
-            {menu.map((menuItem, index) => (
-              <div key={index} className="menu-item">
-                <a href="#" className="text-black">
-                  {menuItem}
-                </a>
-              </div>
+            {menus.map((menu) => (
+              <li
+                key={menu.title}
+                className="px-6 py-2 list-none  font-base hover:text-red-400 text-black cursor-pointer"
+              >
+                <Link
+                  activeClass="active" // Gunakan jika ingin menambahkan kelas ketika tautan aktif
+                  to={menu.href}
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Sesuaikan offset jika ada elemen yang menutupi bagian atas
+                  duration={300}
+                  scrolling=""
+                  onSetActive={menu.href}
+                >
+                  {menu.title}
+                </Link>
+              </li>
             ))}
             <li className=" px-4 py-2 bg-red-400 text-white rounded hover:bg-red-900 transition duration-500 list-none">
               <a href="/public/CV-FANDI.pdf" target="_blank">

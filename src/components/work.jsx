@@ -107,7 +107,7 @@ const work = () => {
                   Why Hire Me For Your next
                   <span className="text-red-400 ms-3">Project?</span>
                 </h5>
-                <p className="tracking-wide text-md leading-relaxed font-normal mt-4 text-md mb-12">
+                <p className="tracking-wide text-md leading-relaxed font-normal mt-4 text-md mb-4">
                   I'm specialist in UI/UX Design, and Slicing Design to Code{" "}
                   <span className="text-red-400 font-bold">
                     HTML, CSS, JavaScript, React JS, Tailwind CSS, and Bootstrap
@@ -116,6 +116,13 @@ const work = () => {
                   , My Passion is Designing, Solving Problem & Developing User
                   Interface
                 </p>
+                <div className="flex mb-10 gap-6">
+                  {iconLanguage.map((items, i) => (
+                    <div key={i}>
+                      <FontAwesomeIcon icon={items} size="xl" />
+                    </div>
+                  ))}
+                </div>
                 <a href="#" className="btn-primary">
                   Contact Me
                 </a>
@@ -220,7 +227,7 @@ const work = () => {
         width={25}
         height={25}
         alt=""
-        className="absolute bottom-0  "
+        className="absolute bottom-0  lg:block hidden"
       />
     </>
   );
