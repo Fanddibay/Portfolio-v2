@@ -21,7 +21,7 @@ library.add(faCheckSquare, faCoffee, faCamera, faBars, faMoon, faSun, faTimes);
 const navbar = () => {
   const menu = ["Home", "About", "Project", "Contact", "Resume"];
   const menus = [
-    { title: "Home", href: "home" },
+    { title: "Home", href: "about1" },
     { title: "About", href: "about" },
     { title: "Project", href: "project" },
     { title: "Contact", href: "contact" },
@@ -41,7 +41,10 @@ const navbar = () => {
         id="home"
       >
         <div className="fixed flex border-2 border-black justify-between items-center mx-auto container rounded-xl shadow-md p-4  bg-slate-50 z-50">
-          <img src={Logo} alt="Logo" width={60} />
+          <a href="#">
+            {" "}
+            <img src={Logo} alt="Logo" width={60} />
+          </a>
           <ul
             className="flex align-middle justify-between my-auto"
             id="myLinks"
@@ -70,20 +73,29 @@ const navbar = () => {
                 Resume
               </a>
             </li>
-            <li></li>
+            <li>
+              {" "}
+              <div>
+                <button className="  ">
+                  <DarkModeToggle />
+                </button>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
       {/* mobile */}
       <nav className=" text-center self-center bg-slate-800  items-center w-full  p-4 flex-wrap justify-between lg:hidden fixed z-50 shadow-md ">
         <div className="flex justify-between">
-          <img
-            src={Logo}
-            alt="Logo"
-            height={20}
-            width={50}
-            className="h-full"
-          />
+          <a href="#">
+            <img
+              src={Logo}
+              alt="Logo"
+              height={20}
+              width={50}
+              className="h-full"
+            />
+          </a>
           <div>
             <button className="-mt-12">
               <DarkModeToggle />

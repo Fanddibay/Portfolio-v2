@@ -89,8 +89,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: false,
-          prevArrow: false,
+          infinite: false,
         },
       },
       {
@@ -98,8 +97,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: false,
-          prevArrow: false,
+          infinite: false,
         },
       },
     ],
@@ -166,11 +164,11 @@ const Carousel = () => {
               {items.name}
             </h3>
             <div className="flex justify-between items-center self-center">
-              <div className="sm:flex gap-4 grid">
-                <h5 className="py-1 px-2 border-2 font-bold border-black text-xs lg:text-sm rounded-lg text-black">
+              <div className=" gap-4 grid">
+                <h5 className="text-center py-1 px-2 border-2 font-bold border-black text-xs lg:text-sm rounded-lg text-black">
                   {items.info}
                 </h5>
-                <h5 className="py-1 px-2 border-2 font-bold border-black rounded-lg text-xs lg:text-sm text-black">
+                <h5 className="text-center py-1 px-2 border-2 font-bold border-black rounded-lg text-xs lg:text-sm text-black">
                   {items.category}
                 </h5>
               </div>

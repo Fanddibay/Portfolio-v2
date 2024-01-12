@@ -10,8 +10,12 @@ const showcase = () => {
         id="project"
       >
         <div className="lg:flex block items-center">
-          <div className="lg:w-1/3 mb-12 lg:p-6 p-4">
-            <h5 className="text-red-400 border-2 sm:w-1/5 w-1/4 border-red-400  px-2.5 py-2 rounded-ss-xl rounded-se-xl rounded-ee-xl">
+          <div
+            className="lg:w-1/3 mb-12 lg:p-6 p-4"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h5 className="text-red-400 border-2 text-center sm:w-1/5 w-1/4 border-red-400  px-2.5 py-2 rounded-ss-xl rounded-se-xl rounded-ee-xl">
               Portfolio
             </h5>
             <div className="w-100">
@@ -23,12 +27,21 @@ const showcase = () => {
                 I have selected and mentioned here some of my latest{" "}
                 <br className="lg:block hidden" /> projects to shre with you.
               </p>
-              <a href="https://dribbble.com/fanbayy" className="btn-primary">
+              <a
+                href="https://dribbble.com/fanbayy"
+                target="_blank"
+                className="btn-primary"
+                rel="noreferrer"
+              >
                 Show More
               </a>
             </div>
           </div>
-          <div className="lg:w-3/5 w-full lg:p-6">
+          <div
+            className="lg:w-3/5 w-full lg:p-6"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             {" "}
             <Carousel />
           </div>

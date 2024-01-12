@@ -76,7 +76,11 @@ const work = () => {
       />
       <div id="about">
         <div className="lg:hidden sm:block">
-          <div className="justify-center items-center text-center my-auto">
+          <div
+            className="justify-center items-center text-center my-auto"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+          >
             <h1 className="font-bold text-center text-primary">
               My <span className="text-red-400">Experience</span>
             </h1>
@@ -102,7 +106,11 @@ const work = () => {
           </div>
           <div className="container mx-auto">
             <div className="mt-24 p-4">
-              <div className="align-middle self-center">
+              <div
+                className="align-middle self-center"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <h5 className="text-primary font-bold text-start  capitalize">
                   Why Hire Me For Your next
                   <span className="text-red-400 ms-3">Project?</span>
@@ -123,7 +131,10 @@ const work = () => {
                     </div>
                   ))}
                 </div>
-                <a href="#" className="btn-primary">
+                <a
+                  href="mailto:fandi.bayu110@gmail.com"
+                  className="btn-primary"
+                >
                   Contact Me
                 </a>
               </div>
@@ -131,6 +142,8 @@ const work = () => {
                 {designIcon.map((icon, i) => (
                   <div
                     key={i}
+                    data-aos="fade-down"
+                    data-aos-duration="1500"
                     className="bg-slate-100 border-2 border-black p-12 text-black rounded-lg"
                   >
                     <FontAwesomeIcon icon={icon.icon} size="2xl" />
@@ -148,7 +161,11 @@ const work = () => {
         </div>
         <div className="lg:block hidden">
           <div className="mt-24 py-12 self-center items-center content-center   mx-auto">
-            <div className="justify-center items-center text-center my-auto">
+            <div
+              className="justify-center items-center text-center my-auto"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+            >
               <h1 className="font-bold text-center text-5xl">
                 My <span className="text-red-400">Experience</span>
               </h1>
@@ -172,7 +189,11 @@ const work = () => {
           </div>
           <div className="my-32 container mx-auto">
             <div className=" justify-between flex ">
-              <div className="align-middle self-center mr-24">
+              <div
+                className="align-middle self-center mr-24"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <h5 className="text-4xl font-bold text-start leading-snug capitalize">
                   Why Hire Me For Your next{" "}
                   <span className="text-red-400">Project?</span>
@@ -193,7 +214,10 @@ const work = () => {
                     </div>
                   ))}
                 </div>
-                <a href="#" className="btn-primary">
+                <a
+                  href="mailto:fandi.bayu110@gmail.com"
+                  className="btn-primary"
+                >
                   Contact Me
                 </a>
               </div>
@@ -202,6 +226,8 @@ const work = () => {
                   <div
                     key={i}
                     className="bg-slate-200  text-black rounded-lg p-6 border-black border-2"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
                   >
                     <FontAwesomeIcon icon={icon.icon} size="2xl" />
                     <h5 className="font-bold text-xl mt-4 mb-2 text-red-400">

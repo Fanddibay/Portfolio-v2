@@ -48,35 +48,37 @@ const contactUs = () => {
         className="absolute bottom-0 lg:block hidden"
       />
       <div className="container mt-32 mx-auto p-4 lg:p-0" id="contact">
-        <div className="w-[100px] mx-auto">
-          <h5 className="text-center items-center border-2 border-red-400 p-2 rounded-ss-xl  rounded-ee-xl font-bold text-red-400">
-            Contact
-          </h5>
-        </div>
-        <div className="text-center mt-6">
-          <h3 className="font-bold text-primary">
-            Let's Discuss Your <span className="text-red-400">Project</span>
-          </h3>
-          <p className="lg:text-balance text-sm lg:text-lg mt-4">
-            Let's make something new, different and more meaningful or make{" "}
-            <br className="lg:block hidden" />
-            thing more visual or conceptual
-          </p>
-        </div>
-        <div className="justify-center items-center mx-auto self-center  text-center my-12">
-          <a
-            href="mailto:fandi.bayu110@gmail.com"
-            target="_blank"
-            className="btn-primary"
-            rel="noreferrer"
-          >
-            Let's Talk
-          </a>
+        <div data-aos="zoom-out-down" data-aos-duration="1500">
+          <div className="w-[100px] mx-auto">
+            <h5 className="text-center items-center border-2 border-red-400 p-2 rounded-ss-xl  rounded-ee-xl font-bold text-red-400">
+              Contact
+            </h5>
+          </div>
+          <div className="text-center mt-6">
+            <h3 className="font-bold text-primary">
+              Let's Discuss Your <span className="text-red-400">Project</span>
+            </h3>
+            <p className="lg:text-balance text-sm lg:text-lg mt-4">
+              Let's make something new, different and more meaningful or make{" "}
+              <br className="lg:block hidden" />
+              thing more visual or conceptual
+            </p>
+          </div>
+          <div className="justify-center items-center mx-auto self-center  text-center my-12">
+            <a
+              href="mailto:fandi.bayu110@gmail.com"
+              target="_blank"
+              className="btn-primary"
+              rel="noreferrer"
+            >
+              Let's Talk
+            </a>
+          </div>
         </div>
         <div className="sm:w-full lg:mt-24 mt-12">
           <div className="sm:flex  lg:flex lg:justify-between md:grid grid sm:gap-4 gap-6 lg:gap-12 sm:w-full  mb-12 lg:mb-0 ">
             {menuItems.map((items, i) => (
-              <div key={i}>
+              <div key={i} data-aos="fade-up" data-aos-duration="1500">
                 <div className="flex gap-4 ">
                   <div className="bg-slate-400 rounded-xl items-center self-center p-4 text-white ">
                     <FontAwesomeIcon icon={items.image} size="xl" />

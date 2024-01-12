@@ -2,6 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import heroImg from "../assets/Hero.png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import asetImg from "../assets/asetAtom.png";
+import React from "react";
+import { useEffect } from "react";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   faGithub,
@@ -16,6 +21,9 @@ import "../App.css";
 import "../Header.css";
 
 const header = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const iconPortfolio = [
     {
       image: faGithub,
@@ -38,6 +46,7 @@ const header = () => {
       link: "https://www.facebook.com/fanbay.fanbay.1",
     },
   ];
+
   return (
     <>
       <img
@@ -78,8 +87,12 @@ const header = () => {
       <div className="p-4">
         <div className="lg:container mx-auto">
           <div className="sm:hidden block">
-            <div className=" align-middle text-end  mt-5">
-              <img src={heroImg} alt="Hero" width={1000} />
+            <div
+              className=" align-middle text-end   mt-5"
+              data-aos="zoom-out-up"
+              data-aos-duration="1500"
+            >
+              <img src={heroImg} alt="Hero" width={1000} id="about1" />
               <div className=" w-full align-middle self-center  pl-0 text-start">
                 <h1 className="font-bold text-black-primary lg:mt-0 mt-6 leading-10 ">
                   <span className="font-medium text-3xl ">👋Hi am</span>
@@ -126,7 +139,11 @@ const header = () => {
           </div>
           <div className="lg:mt-48 sm:mt-10 sm:block hidden sm:px-6">
             <div className="flex sm:justify-between">
-              <div className=" w-full align-middle self-center lg:pl-4 pl-0">
+              <div
+                className=" w-full align-middle self-center sm:mt-16 lg:pl-4 pl-0"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <h1 className="font-bold text-black-primary lg:mt-0 leading-10 ">
                   <span className="font-medium text-2xl lg:text-4xl">
                     👋Hi am
@@ -146,8 +163,8 @@ const header = () => {
                     Designing and developing user
                     <span className="font-bold text-red-400 ms-1 leading-6">
                       Interface for over 2 years as UI/UX DESIGNERS{" "}
-                      <br className="hidden lg:block" /> and WEB DEVELOPER, lets
-                      create something reate together.
+                      <br className="hidden lg:block sm:hidden" /> and WEB
+                      DEVELOPER, lets create something reate together.
                     </span>{" "}
                     <br />
                     lets create something reate together.
@@ -178,7 +195,11 @@ const header = () => {
                   </div>
                 </div>
               </div>
-              <div className=" align-middle text-end hidden sm:block">
+              <div
+                className=" align-middle text-end hidden sm:block"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
                 <img
                   src={heroImg}
                   alt="Hero"

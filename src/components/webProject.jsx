@@ -150,8 +150,7 @@ const webProject = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: false,
-          prevArrow: false,
+          infinite: false,
         },
       },
       {
@@ -159,8 +158,7 @@ const webProject = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: false,
-          prevArrow: false,
+          infinite: false,
         },
       },
     ],
@@ -197,11 +195,11 @@ const webProject = () => {
         className="right-10 rotate-45 absolute "
       />
 
-      <div
-        className="container mt-32 mx-auto overflow-hidden lg:overflow-x-visible"
-        id="project"
-      >
-        <h1 className="text-primary  font-bold text-center mb-12">
+      <div className="container mt-32 mx-auto overflow-hidden " id="project">
+        <h1
+          className="text-primary  font-bold text-center mb-12"
+          data-aos="fade-left"
+        >
           Some Projects{" "}
           <span className="text-red-400">
             Web <br className="lg:hidden block" /> Development
@@ -210,8 +208,13 @@ const webProject = () => {
         </h1>
         <Slider {...settings}>
           {itemsWeb.map((item, i) => (
-            <div key={i} className="">
-              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 grid-cols-1  lg:grid-cols-2 h-[65vh] lg:h-[100%]">
+            <div
+              key={i}
+              className=""
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 grid-cols-1  lg:grid-cols-2 h-[65vh] sm:h-[100%] lg:h-[100%]">
                 <img
                   src={item.image}
                   alt="Project Image Web"
