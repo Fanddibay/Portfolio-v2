@@ -69,3 +69,11 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.close-icon {
+  cursor: pointer;
+}

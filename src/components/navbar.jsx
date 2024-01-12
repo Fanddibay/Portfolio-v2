@@ -88,23 +88,27 @@ const navbar = () => {
             <button className="-mt-12">
               <DarkModeToggle />
             </button>
-            <FontAwesomeIcon
-              icon={faBars}
-              className={`menu-icon p-1 text-white mr-2 mt-2 ${
-                isOpen ? "hidden" : ""
-              }`}
-              onClick={toggleMenu}
-              size="xl"
-            />
-            {/* Ikon X (Close) */}
-            <FontAwesomeIcon
-              icon={faTimes}
-              className={`close-icon p-1 text-white mr-2 mt-2 ${
-                isOpen ? "" : "hidden"
-              }`}
-              onClick={toggleMenu}
-              size="xl"
-            />
+            <button>
+              <FontAwesomeIcon
+                icon={faBars}
+                className={`menu-icon p-1 text-white mr-2 mt-2 ${
+                  isOpen ? "hidden" : ""
+                }`}
+                onClick={toggleMenu}
+                size="xl"
+              />
+              {/* Ikon X (Close) */}
+            </button>
+            <button>
+              <FontAwesomeIcon
+                icon={faTimes}
+                className={`close-icon p-1 text-white mr-2 mt-2 ${
+                  isOpen ? "" : "hidden"
+                }`}
+                onClick={toggleMenu}
+                size="xl"
+              />
+            </button>
           </div>
         </div>
 
@@ -114,23 +118,23 @@ const navbar = () => {
             {menus.map((menu) => (
               <li
                 key={menu.title}
-                className="px-6 py-2 list-none  font-base hover:text-red-400 text-black cursor-pointer"
+                className="px-6 list-none py-2 font-base hover:text-red-400 text-black cursor-pointer"
               >
                 <Link
-                  activeClass="active" // Gunakan jika ingin menambahkan kelas ketika tautan aktif
+                  activeClass="active"
                   to={menu.href}
                   spy={true}
                   smooth={true}
-                  offset={-70} // Sesuaikan offset jika ada elemen yang menutupi bagian atas
+                  offset={-70}
                   duration={300}
-                  scrolling=""
-                  onSetActive={menu.href}
+                  onSetActive={() => {}}
+                  onClick={toggleMenu} // Tutup menu setelah link diklik
                 >
                   {menu.title}
                 </Link>
               </li>
             ))}
-            <li className=" px-4 py-2 bg-red-400 text-white rounded hover:bg-red-900 transition duration-500 list-none">
+            <li className="px-4 py-2 bg-red-400 text-white rounded hover:bg-red-900 transition duration-500 list-none">
               <a href="/public/CV-FANDI.pdf" target="_blank">
                 Resume
               </a>

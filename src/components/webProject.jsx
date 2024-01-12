@@ -211,7 +211,7 @@ const webProject = () => {
         <Slider {...settings}>
           {itemsWeb.map((item, i) => (
             <div key={i} className="">
-              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 grid-cols-1  lg:grid-cols-2 lg:h-[100%]">
+              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 grid-cols-1  lg:grid-cols-2 h-[65vh] lg:h-[100%]">
                 <img
                   src={item.image}
                   alt="Project Image Web"
