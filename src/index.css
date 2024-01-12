@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.dark {
+  --tw-bg-opacity: 1 !important;
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+/* create customize css using plugin registered tailwindcss r */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-4 bg-red-400 border-black border-2 font-bold hover:bg-red-900 text-white rounded-lg;
+  }
+
+  .text-primary {
+    @apply text-4xl  my-6 leading-tight tracking-wide;
+  }
+}

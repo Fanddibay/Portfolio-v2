@@ -1,0 +1,26 @@
+.scroll {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 5px solid rgb(255, 32, 32);
+  border-radius: 50%;
+  z-index: 999;
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll p {
+  font-size: 1em;
+  color: rgb(255, 32, 32);
+  transform: rotate(90deg);
+  position: relative;
+  text-align: center;
+  right: 1.4px;
+  bottom: 1.4px;
+}
