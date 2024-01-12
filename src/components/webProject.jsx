@@ -29,7 +29,7 @@ const webProject = () => {
       role: "Web Developer",
       subtitle: " Web Travel App",
       descrpition:
-        "FanTravel is a Travel Statis Website, and and i have completed to the backend developer stage with php and laravel framework 6, for more info u can email me",
+        "FanTravel is a Travel  Website, and and i have completed to the backend developer stage with php and laravel",
       skill: ["HTML5", "Jquery", "JavaScript", "Bootstrap5"].join(" "),
       github: "https://github.com/Fanddibay/FrontEnd-FanTravel",
       demo: "https://fantravel.netlify.app/",
@@ -40,7 +40,7 @@ const webProject = () => {
       role: "Web Developer",
       subtitle: "SME E-Commerce",
       descrpition:
-        "The making of this project was taken from the Science and Technology Development Student Creativity Program (PKM-PI) which aims to make it easier for consumers to order food and drinks at the closest scope in the campus environment.",
+        "The making of this project was taken from the Science and Technology Development Student Creativity Program (PKM-PI).",
       skill: ["HTML5", "Jquery", "JavaScript", "TailwindCSS"].join(" "),
       github: "https://github.com/Fanddibay/Warsoed",
       demo: "https://main--warsoed.netlify.app/",
@@ -51,7 +51,7 @@ const webProject = () => {
       role: "Web Developer",
       subtitle: "Company Landing Page",
       descrpition:
-        "Productly Company Website is a website comapny that i built with bootstrap 5, and jquery",
+        "Productly Company Website is a website comapny that i built with bootstrap 5, and jquery and slicing figma to code",
       skill: ["HTML5", "Jquery", "JavaScript", "Bootstrap 5"].join(" "),
       github: "https://github.com/Fanddibay/Productly-Company",
       demo: "https://productly-company.netlify.app/",
@@ -63,14 +63,7 @@ const webProject = () => {
       subtitle: "Game Web Dev",
       descrpition:
         "Tax-Qu is a Game Question for a tax education that i built with Vanilla Css 80%, bootstrap, Vanilla Js, jquery, and webpack",
-      skill: [
-        "HTML5",
-        "Jquery",
-        "JavaScript",
-        "Bootstrap 5",
-        "Webpack",
-        "Vanilla CSS",
-      ].join(" "),
+      skill: ["HTML5", "Jquery", "JavaScript", "Bootstrap 5"].join(" "),
       github: "https://github.com/Fanddibay/Quizz-APP",
       demo: "https://demo-quizz-app.netlify.app/",
     },
@@ -81,14 +74,7 @@ const webProject = () => {
       subtitle: "E-Commerce Furniture",
       descrpition:
         "Luxspace is a website online shop funiture that i built with tailwind css, jquery, dan webpack",
-      skill: [
-        "HTML5",
-        "Jquery",
-        "JavaScript",
-        "Bootstrap 5",
-        "Webpack",
-        "Vanilla CSS",
-      ].join(" "),
+      skill: ["HTML5", "Jquery", "JavaScript", "Bootstrap 5"].join(" "),
       github: "https://github.com/Fanddibay/Luxspace-Tailwindcss",
       demo: "https://fanbayylux.netlify.app/",
     },
@@ -225,7 +211,7 @@ const webProject = () => {
         <Slider {...settings}>
           {itemsWeb.map((item, i) => (
             <div key={i} className="">
-              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 h-[75vh] lg:h-[100%]">
+              <div className="lg:flex grid sm:grid gap-6 lg:justify-between  bg-slate-200 border-2 border-black lg:p-12 p-6 rounded-xl ms-6 grid-cols-1  lg:grid-cols-2 lg:h-[100%]">
                 <img
                   src={item.image}
                   alt="Project Image Web"
