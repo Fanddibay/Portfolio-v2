@@ -73,7 +73,7 @@ const webProject = () => {
       role: "Front End Web Developer",
       subtitle: "E-Commerce Furniture",
       descrpition:
-        "Luxspace is a website online shop funiture that i built with tailwind css, jquery, dan webpack",
+        "Luxspace is a website online shop funiture that i built with tailwind css, jquery, and webpack",
       skill: ["HTML5", "Jquery", "JavaScript", "Bootstrap 5"].join(" "),
       github: "https://github.com/Fanddibay/Luxspace-Tailwindcss",
       demo: "https://fanbayylux.netlify.app/",

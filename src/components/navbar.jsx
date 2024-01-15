@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Logo from "../assets/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import pdf from "../assets/CV-FANDI.pdf";
 import "../App.css";
 import DarkModeToggle from "../atoms/darkmodeToggle";
 // eslint-disable-next-line no-unused-vars
@@ -36,10 +37,7 @@ const navbar = () => {
   return (
     <>
       {/* Dekstop */}
-      <nav
-        className="items-center p-3 flex-wrap container mx-auto   mt-4 lg:block hidden z-50"
-        id="home"
-      >
+      <nav className="items-center p-3 flex-wrap container mx-auto   mt-4 lg:block hidden z-50">
         <div className="fixed flex border-2 border-black justify-between items-center mx-auto container rounded-xl shadow-md p-4  bg-slate-50 z-50">
           <a href="#">
             {" "}
@@ -69,7 +67,7 @@ const navbar = () => {
               </li>
             ))}
             <li className="px-4 py-2 bg-red-400 text-white font-medium rounded hover:bg-red-900 transition duration-500">
-              <a href="/public/CV-FANDI.pdf" target="_blank">
+              <a href={pdf} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
@@ -147,7 +145,7 @@ const navbar = () => {
               </li>
             ))}
             <li className="px-4 py-2 bg-red-400 text-white rounded hover:bg-red-900 transition duration-500 list-none">
-              <a href="/public/CV-FANDI.pdf" target="_blank">
+              <a href={pdf} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
