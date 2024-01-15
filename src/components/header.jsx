@@ -87,14 +87,14 @@ const header = () => {
         className="absolute right-20 bottom-10 lg:block hidden"
       />
       <div className="p-4 ">
-        <div className="lg:container mx-auto" id="about1">
+        <div className="lg:container mx-auto">
           <div className="sm:hidden block overflow-hidden">
             <div
               className=" align-middle text-end   mt-5"
               data-aos="zoom-out-up"
               data-aos-duration="1500"
             >
-              <img src={heroImg} alt="Hero" width={1000} />
+              <img src={heroImg} alt="Hero" width={1000} id="about1" />
               <div className=" w-full align-middle self-center  pl-0 text-start">
                 <h1 className="font-bold text-black-primary lg:mt-0 mt-6 leading-10 ">
                   <span className="font-medium text-3xl ">👋Hi am</span>
